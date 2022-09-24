@@ -5,7 +5,7 @@ text=input()
 f = open(text +".txt")
 
 #text = "Hello world"
-text = f.read()
+text = f.read().replace("\n"," ")
 language = "tr"
 print("mp3 ismini giriniz:")
 obj = gTTS(text = text, lang= language, slow=False)
